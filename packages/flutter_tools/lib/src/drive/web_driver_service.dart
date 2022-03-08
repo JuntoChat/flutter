@@ -284,6 +284,8 @@ Map<String, dynamic> getDesiredCapabilities(Browser browser, bool headless,
             '--no-default-browser-check',
             '--no-sandbox',
             '--no-first-run',
+            '--use-fake-device-for-media-stream',
+            '--use-fake-ui-for-media-stream',
             if (headless) '--headless'
           ],
           'perfLoggingPrefs': <String, String>{
